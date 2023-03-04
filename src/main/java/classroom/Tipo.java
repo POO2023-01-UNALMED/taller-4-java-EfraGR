@@ -5,7 +5,15 @@ public enum Tipo {
 	
 	private int codigo;
 	private String nombre;
-	public Tipo(int codigo,String nombre) {
+
+
+	//Porque debe ser privada?
+	private Tipo(int codigo) {
+		this.codigo = codigo;
+		this.nombre = "";
+	}
+
+	private Tipo(int codigo,String nombre) {
 		this.codigo = codigo;
 		this.nombre = nombre;
 	}
